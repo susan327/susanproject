@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}トップ | すーさんプロジェクト{% endblock %}
+
+{% block content %}
+<section>
+  <h2>ようこそ！</h2>
+  <p>
+    すーさんプロジェクトは、ITとやさしさで、<br>
+    誰も取り残さないサポートを目指しています。
+  </p>
+</section>
+
+<section>
+  <h2>提供中のサービス</h2>
+  <ul class="services">
+    <li>
+  くだらないミニアプリ制作（3,000円〜）<br>
+      <a href="{{ url_for('mini_app') }}">詳しくはこちら</a>
+    </li>
+    <li>
+      ホームページ制作・リニューアル支援（30,000円〜）<br>
+      <a href="{{ url_for('hp_renew') }}">詳しくはこちら</a>
+    </li>
+    <li>
+      シンプル1ページHP作成パック（20,000円〜）<br>
+      <a href="{{ url_for('simple_hp') }}">詳しくはこちら</a>
+    </li>
+    <li>
+      HPお引っ越し・ドメイン引継ぎサービス（10,000円〜）<br>
+      <a href="{{ url_for('hp_transfer') }}">詳しくはこちら</a>
+    </li>
+    <li>
+      AI文字起こし・要約サービス（2,000円〜）<br>
+      <a href="{{ url_for('ai_summary') }}">詳しくはこちら</a>
+    </li>
+    <li>
+      フォーム作成・自動送信システム導入（5,000円〜）<br>
+      <a href="{{ url_for('form_auto') }}">詳しくはこちら</a>
+    </li>
+    <li>
+      簡易ロゴ作成サポート（3,000円〜）<br>
+      <a href="{{ url_for('logo_create') }}">詳しくはこちら</a>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>ポートフォリオ</h2>
+  <p style="text-align: center; font-size: 1.1rem; margin-top: 1rem;">
+    ただいま準備中です。<br>
+    公開までお待ちください！
+  </p>
+</section>
+{% endblock %}
