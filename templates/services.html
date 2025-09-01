@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}サービス一覧 | すーさんプロジェクト{% endblock %}
+
+{% block content %}
+<section>
+  <h2>提供中のサービス一覧</h2>
+  <p>
+    すーさんプロジェクトでは、IT×やさしさをテーマに、<br>
+    個人や小規模事業者向けのサポートサービスを展開しています。
+  </p>
+
+  <ul class="services" style="margin-top: 2rem;">
+    <li>
+      <strong>ホームページ制作・リニューアル支援</strong><br>
+      初めてのサイトから今あるHPの改善まで対応します。<br>
+      <a href="{{ url_for('hp_renew') }}">▶ 詳しくはこちら</a>
+    </li>
+
+    <li>
+      <strong>シンプル1ページHP作成パック</strong><br>
+      名刺代わりに持てる、お手軽で伝わる1枚サイト！<br>
+      <a href="{{ url_for('simple_hp') }}">▶ 詳しくはこちら</a>
+    </li>
+
+    <li>
+      <strong>AI活用支援（個人・事業所向け）</strong><br>
+      ChatGPTなどの使い方を、やさしくレクチャー＆活用支援します。<br>
+      <a href="{{ url_for('ai_support') }}">▶ 詳しくはこちら</a>
+    </li>
+
+    <li>
+      <strong>文字起こし・要約サービス</strong><br>
+      会議や講演の録音を、テキスト化＆要約！<br>
+      <a href="{{ url_for('ai_summary') }}">▶ 詳しくはこちら</a>
+    </li>
+
+    <li>
+      <strong>フォーム作成・自動送信システム</strong><br>
+      問い合わせ・予約などの受付フォームを手軽に設置！<br>
+      <a href="{{ url_for('form_auto') }}">▶ 詳しくはこちら</a>
+    </li>
+
+    <li>
+      <strong>HPお引っ越し・ドメイン引継ぎサービス</strong><br>
+      古いサーバーや業者からの脱却、引越し・移管もお任せ！<br>
+      <a href="{{ url_for('hp_transfer') }}">▶ 詳しくはこちら</a>
+    </li>
+
+    <li>
+      <strong>簡易ロゴ作成サポート</strong><br>
+      CanvaやAIを活用して、イメージに合ったロゴを制作！<br>
+      <a href="{{ url_for('logo_create') }}">▶ 詳しくはこちら</a>
+    </li>
+
+    <li>
+      <strong>ミニアプリ制作</strong><br>
+      押すだけ、占いだけ、だけどちょっと楽しいアプリ作ります。<br>
+      <a href="{{ url_for('mini_app') }}">▶ 詳しくはこちら</a>
+    </li>
+  </ul>
+</section>
+{% endblock %}
