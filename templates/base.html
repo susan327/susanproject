@@ -82,7 +82,7 @@
       border-radius: 12px;
       padding: 1.5rem;
       max-width: 600px;
-      margin: 0 auto 2rem auto;
+      margin: 0 auto 1rem auto; /* ← 下の注意書きとの余白を少し詰める */
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       text-align: center;
     ">
@@ -97,6 +97,11 @@
         こちらよりご連絡いたします。（Xの通話も対応いたします）
       </p>
     </div>
+
+    <!-- ★ 税抜き表記（全ページ共通） -->
+    <p style="text-align:center; font-size:0.9rem; color:#555; margin: 0 0 1.25rem 0;">
+      ※表記はすべて税抜き価格です
+    </p>
 
     <div style="text-align: center; margin-bottom: 2rem;">
       <a href="{{ url_for('index') }}" style="color: #007bff; font-weight: bold; text-decoration: none;">
